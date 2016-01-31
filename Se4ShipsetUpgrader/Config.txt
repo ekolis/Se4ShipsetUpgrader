@@ -1,0 +1,101 @@
+﻿[Minimal]
+Vehicle
+VehicleGroup
+
+[Basic]
+MobileSpacecraft: Vehicle
+ImmobileSpacecraft: Vehicle
+GroundVehicle: Vehicle
+MobileSpacecraftGroup: VehicleGroup
+ImmobileSpacecraftGroup: VehicleGroup
+
+[Types]
+Ship: MobileSpacecraft
+Base: ImmobileSpacecraft
+Fighter: MobileSpacecraft
+Troop: GroundVehicle
+!Satellite: ImmobileSpacecraft
+!Mine: ImmobileSpacecraft
+!Drone: MobileSpacecraft
+WeapPlatform: GroundVehicle
+!FighterGroup: MobileSpacecraftGroup
+!SatelliteGroup: VehicleGroup
+!MineGroup: VehicleGroup
+!DroneGroup: MobileSpacecraftGroup
+
+[Ship Classes]
+WarshipLight: Ship
+WarshipMedium: Ship
+WarshipHeavy: Ship
+SupportShipLight: Ship
+SupportShipMedium: Ship
+SupportShipHeavy: Ship
+
+[Stock]
+!Escort: WarshipLight
+!Frigate: WarshipLight
+!Destroyer: WarshipLight
+!LightCruiser: WarshipMedium
+!Cruiser: WarshipMedium
+!BattleCruiser: WarshipMedium
+!Battleship: WarshipHeavy
+!Dreadnought: WarshipHeavy
+!CarrierLight: SupportShipLight
+!Carrier: SupportShipMedium
+!CarrierHeavy: SupportShipHeavy
+!TransportSmall: SupportShipLight
+!TransportMedium: SupportShipMedium
+!TransportLarge: SupportShipHeavy
+!ColonyShip: SupportShipLight
+!SpaceStation: Base
+!BattleStation: Base
+!Starbase: Base
+Baseship: Starbase
+!FighterSmall: Fighter
+!FighterMedium: Fighter
+!FighterLarge: Fighter
+!TroopSmall: Troop
+!TroopMedium: Troop
+!TroopLarge: Troop
+!WeapPlatformSmall: WeapPlatform
+!WeapPlatformMedium: WeapPlatform
+!WeapPlatformLarge: WeapPlatform
+
+[Neostandard/Neostandard++]
+Scout: Escort
+Corvette: Escort
+DestroyerHeavy: Destroyer
+CruiserHeavy: Cruiser
+DreadnoughtHeavy: Dreadnought
+BaseshipHeavy: Baseship
+BaseshipMassive: BaseshipHeavy
+Worldship: BaseshipHeavy
+CarrierTiny: CarrierLight
+CarrierMassive: CarrierHeavy
+LargeSpaceStation: SpaceStation
+SpaceStationLarge: SpaceStation
+LargeBattleStation: BattleStation
+BattleStationLarge: BattleStation
+WarStation: BattleStationLarge
+ResourceStation: SpaceStation
+ColonyShipLarge: ColonyShip
+TransportTiny: TransportSmall
+ResourceShip: TransportMedium
+Barge: TransportLarge
+FighterHuge: FighterLarge
+FighterMassive: FighterHuge
+BomberSmall: FighterSmall
+BomberMedium: FighterMedium
+BomberLarge: FighterLarge
+TroopInfantry: TroopSmall
+TroopElite: TroopInfantry
+TroopHuge: TroopLarge
+DroneSmall: Drone
+DroneMedium: Drone
+DroneLarge: Drone
+MineSmall: Mine
+MineMedium: Mine
+MineLarge: Mine
+SatelliteSmall: Satellite
+SatelliteMedium: Satellite
+SatelliteLarge: Satellite
